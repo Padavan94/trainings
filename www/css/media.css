@@ -1,0 +1,81 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.carousel-box .left-box h1 {margin-top: 62px; line-height: 54px;font-size: 55px;}
+	.carousel-box .left-box h1 {font-size: 50px; line-height: 54px;}
+	.carousel-box .slider-item2 .left-box h1 {font-size: 50px; line-height: 54px;}
+	.carousel-box .slider-item3 img,.carousel-box .slider-item4 img{width: 100%; height: auto;}
+	.carousel-box .slider-item3 .left-box h1 {position: static; width: auto; font-size: 50px; line-height: 54px;}
+	.carousel-box .slider-item4 .left-box h1 {margin-top: 50px; line-height: 54px; font-size: 50px;}
+	.bottom-wrapper .blue-section .left-form {width: 380px;}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.carousel-box .slider-item1 img,.carousel-box .slider-item2 img{width: 100%; height: auto;}
+	.carousel-box .left-box h1,.carousel-box .slider-item2 .left-box h1,.carousel-box .slider-item3 .left-box h1,.carousel-box .slider-item4 .left-box h1 {font-size: 42px;line-height: 44px;}
+	.carousel-box .left-box span,.carousel-box .slider-item2 .left-box span,.carousel-box .slider-item3 .left-box span,.carousel-box .slider-item4 .left-box span{font-size: 22px;}
+	.carousel-box .slider-item3 .left-box ul li{font-size: 22px;}
+	.carousel-box .slider-item3 .left-box h1{margin-top: 50px;}
+	.bottom-wrapper .blue-section .left-form {width: 50%;}
+	.bottom-wrapper .blue-section .right-img img {position: static; width: 90%; margin: 15px auto; height: auto;}
+	.bottom-wrapper .blue-section .left-form span {font-size: 20px;}
+	.bottom-wrapper .blue-section .left-form .text-input input,.bottom-wrapper .blue-section .left-form .submit-input input{height: 40px; line-height: 40px; font-size: 15px;}
+	.bottom-wrapper .blue-section .left-form .submit-input input{font-size: 30px;}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.carousel-box .left-box, .carousel-box .right-box {width: 100%;}
+	.carousel-box .left-box span, .carousel-box .slider-item2 .left-box span, .carousel-box .slider-item3 .left-box span, .carousel-box .slider-item4 .left-box span {font-size: 18px;}
+	.carousel-box .left-box h1, .carousel-box .slider-item2 .left-box h1, .carousel-box .slider-item3 .left-box h1, .carousel-box .slider-item4 .left-box h1 {font-size: 27px;line-height: 26px;margin-top: 25px;}
+	.bottom-wrapper .blue-section .left-form,.bottom-wrapper .blue-section .right-form {width: 100%;}
+	.bottom-wrapper .blue-section .left-form {display: table-footer-group; width: 100%;}
+	.bottom-wrapper .blue-section .right-img {display: table-header-group; text-align: center; width: 100%;}
+	.bottom-wrapper {padding-bottom: 0;}
+	footer{padding: 15px 0 15px 0;height: auto;}
+	.bottom-wrapper .blue-section .left-form .form-in{width: 90%; margin: 0 auto;}
+	.container-table{text-align: center; display: table;}
+	.carousel-box .link-group {margin: 10px auto; position: static;}
+	footer .footer-nav a {border: none;}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
