@@ -11,6 +11,7 @@
 $text_gray     :     #404040;
 $text_gray_l   :     #999999;
 $orange        :     #e7845d;
+$my100: 100%;
 
 body{
 	font-size: 14px;
@@ -23,6 +24,9 @@ a{
 	color: $text_gray;
 	text-decoration: none;
 	outline: none;
+	&:hover{
+		text-decoration: none;
+	}
 }
 h1,h2,h3,h4,h5,h6{
 	margin: 0;
@@ -47,6 +51,9 @@ h1,h2,h3,h4,h5,h6{
 }
 
 //independance blocks
+.owl-controls{
+	display: none !important;
+}
 .header-tape{
 	@include display(flex);
 	height: 133px;
@@ -667,7 +674,7 @@ footer{
 	}
 }
 //news page
-.news-page,.articles-page{
+.news-page,.articles-page,.trainings-page,.trainers-page,.schedule-page{
 	nav{
 		text-align: center;
 		padding: 32px 0px;
@@ -751,6 +758,333 @@ footer{
 			border: 1px solid #000;
 			margin: 0px 2px;
 			line-height: 1;
+		}
+	}
+}
+
+//trainings-page
+.trainings-page{
+	text-align: center;
+	color: $text_gray_l;
+	border-bottom: 2px solid #fff;
+	.training-articles-name{
+		font-family: "Roboto-b";
+		font-size: 25px;
+		position: relative;
+		span{
+			position: relative;
+			z-index: 10;
+			display: inline-block;
+			background-color: #f2f2f2;
+			padding: 0px 7px;
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			display: block;
+			top: 50%;
+			width: 100%;
+			height: 1px;
+			background-color: #8c8c8c;
+		}
+	}
+	.training-articles-descr{
+		padding: 23px 0 35px 0;
+		font-family: "Roboto-r";
+	}
+	.training-boxes{
+		padding: 0px 240px 0 240px;
+		.training-box{
+			padding-bottom: 25px;
+		}
+		.top-dmt-line{
+			border-bottom: 2px solid #000;
+			.dmt{
+				float: left;
+				.day{
+					display: inline-block;
+					span{
+						font-family: "Roboto-r";
+						font-size: 21px;
+						color: $text_gray;
+						&:last-child{
+							font-size: 10px;
+						}
+					}
+				}
+				.date{
+					margin-left: 8px;
+					font-family: "Roboto-l";
+					color: $text_gray;
+					font-size: 15px;
+					display: inline-block;
+				}
+			}
+			.adress{
+				float: right;
+				position: relative;
+				top: 4px;
+				color: $text_gray;
+				i{
+					margin-right: 5px;
+					color: #111;
+				}
+			}
+		}
+		.title{
+			position: relative;
+			text-align: left;
+			padding: 8px 0;
+			h3{
+				font-size: 16px;
+				text-transform: uppercase;
+				display: inline-block;
+				text-decoration: underline;
+				a:hover{
+					color: $orange;
+				}
+			}
+			.more-info{
+				color: #fff;
+				background-color: #000;
+				display: inline-block;
+				top: 0;
+				right: 0;
+				position: absolute;
+				padding: 8px 10px;
+				&:hover{
+					background-color: $orange;
+					color: $text_gray;
+				}
+			}
+		}
+		.type{
+			padding-bottom: 16px;
+			font-size: 12px;
+			text-align: left;
+		}
+		.consultant-info{
+			background-color: #e8e8e8;
+			padding: 0 !important;
+			margin-bottom: 10px;
+		}
+		.photo{
+			padding: 0;
+			img{
+				width: 100%;
+			}
+		}
+		.text-wrap{
+			h3{
+				font-size: 15px;
+
+			}
+			padding: 19px 15px 15px 10px;
+			text-align: left;
+			.status{
+				color: $text_gray_l;
+			}
+			.descr{
+				margin-top: 22px;
+			}
+		}
+		.meta-box{
+			text-align: left;
+			.meta-descr{
+				p:nth-child(odd){
+					color: $text_gray;
+				}
+			}
+		}
+		.button-group{
+			text-align: right;
+			a{
+				display: inline-block;
+				padding: 9px 12px;
+				color: #fff;
+				&:first-child{
+					background-color: $text_gray;
+					&:hover{
+						background-color: #000;
+					}
+				}
+				&:last-child{
+					background-color: $orange;
+					&:hover{
+						background-color: #000;
+					}
+				}
+			}
+		}
+	}
+}
+//triners box
+.trainers-page{
+	padding-top: 68px;
+	.consultant-info{
+		background-color: #e8e8e8;
+		padding: 0 !important;
+		margin-bottom: 28px;
+	}
+	.photo{
+		padding: 0;
+		img{
+			width: 100%;
+		}
+	}
+	.text-wrap{
+		font-family: "Roboto-l";
+		h3{
+			font-size: 15px;
+
+		}
+		padding: 19px 15px 15px 10px;
+		text-align: left;
+		.status{
+			color: $text_gray_l;
+		}
+		.descr{
+			margin-top: 22px;
+		}
+	}
+	.carusel-wrapper{
+		position: relative;
+	}
+	.owl-carousel{
+		padding: 0px 15px 15px 0;
+	}
+	.carusel-controls{
+		color: #000;
+		font-size: 25px;
+		position: absolute;
+		top: 50%;
+		font-weight: bold;
+		margin-top: -13px;
+		cursor: pointer;
+	}
+	.right-c{
+		right: -4px;
+	}
+	.left-c{
+		left: -4px;
+	}
+	.item{
+		padding-left: 15px;
+		padding-right: 15px;
+		position: relative;
+		&:before{
+			content: "";
+			width: 1px;
+			height: 100%;
+			position: absolute;
+			right: 0;
+			top: 0;
+			background-color: #fff;
+		}
+		.adress{
+			color: $text_gray;
+			i{
+				margin-right: 5px;
+				color: #111;
+			}
+		}
+		.top-dmt-line{
+			border-bottom: 2px solid #000;
+			.dmt{
+				.day{
+					display: inline-block;
+					span{
+						font-family: "Roboto-r";
+						font-size: 21px;
+						color: $text_gray;
+						&:last-child{
+							font-size: 10px;
+						}
+					}
+				}
+				.date{
+					float: right;
+					font-family: "Roboto-l";
+					color: $text_gray;
+					font-size: 15px;
+					display: inline-block;
+					position: relative;
+					top: 6px;
+				}
+			}
+			
+		}
+		.title{
+			position: relative;
+			text-align: left;
+			padding: 8px 0;
+			h3{
+				font-size: 16px;
+				text-transform: uppercase;
+				display: inline-block;
+				a:hover{
+					color: $orange;
+				}
+			}
+			.more-info{
+				color: #fff;
+				background-color: #000;
+				display: inline-block;
+				top: 0;
+				right: 0;
+				position: absolute;
+				padding: 8px 10px;
+				&:hover{
+					background-color: $orange;
+					color: $text_gray;
+				}
+			}
+		}
+	}
+}
+.schedule-page{
+	font-family: "Roboto-l";
+	padding-top: 56px;
+	.month{
+		text-align: center;
+		position: relative;
+		padding-bottom: 70px;
+		h3{
+			font-family: "Roboto-bold";
+			i{
+				color: $text_gray;
+				margin: 0 13px;
+				font-weight: bold;
+				position: relative;
+				font-size: 25px;
+			}
+		}
+		.go-traning{
+			display: inline-block;
+			padding: 6px 9px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: $orange;
+			color: #fff;
+			&:hover{
+				background-color: #000;
+			}
+		}
+		h3{
+			color: $text_gray_l;
+			font-size: 21px;
+		}
+	}
+
+	.days{
+		.day-z{
+			float:left;
+			text-align: center;
+			width: $my100/7;
+			font-size: 23px;
+			font-family: "Roboto-l";
+
 		}
 	}
 }

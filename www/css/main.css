@@ -48,6 +48,8 @@ a {
   color: #404040;
   text-decoration: none;
   outline: none; }
+  a:hover {
+    text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -67,6 +69,9 @@ h1, h2, h3, h4, h5, h6 {
     .look-all a:hover, .look-all a:active {
       text-decoration: none;
       color: #e7845d; }
+
+.owl-controls {
+  display: none !important; }
 
 .header-tape {
   display: -webkit-box;
@@ -535,71 +540,316 @@ footer {
       background-color: #e7845d;
       color: #404040; }
 
-.news-page nav, .articles-page nav {
+.news-page nav, .articles-page nav, .trainings-page nav, .trainers-page nav, .schedule-page nav {
   text-align: center;
   padding: 32px 0px; }
-  .news-page nav a, .articles-page nav a {
+  .news-page nav a, .articles-page nav a, .trainings-page nav a, .trainers-page nav a, .schedule-page nav a {
     display: inline-block;
     padding: 11px 12px;
     margin: 0px 5px;
     color: #404040; }
-    .news-page nav a:hover, .articles-page nav a:hover {
+    .news-page nav a:hover, .articles-page nav a:hover, .trainings-page nav a:hover, .trainers-page nav a:hover, .schedule-page nav a:hover {
       background-color: #000;
       color: #fff;
       text-decoration: none; }
-.news-page .news-box, .articles-page .news-box {
+.news-page .news-box, .articles-page .news-box, .trainings-page .news-box, .trainers-page .news-box, .schedule-page .news-box {
   margin-bottom: 27px;
   background-color: #e8e8e8; }
-.news-page .image-box, .articles-page .image-box {
+.news-page .image-box, .articles-page .image-box, .trainings-page .image-box, .trainers-page .image-box, .schedule-page .image-box {
   padding: 0; }
-  .news-page .image-box img, .articles-page .image-box img {
+  .news-page .image-box img, .articles-page .image-box img, .trainings-page .image-box img, .trainers-page .image-box img, .schedule-page .image-box img {
     width: 100%; }
-.news-page .description-box, .articles-page .description-box {
+.news-page .description-box, .articles-page .description-box, .trainings-page .description-box, .trainers-page .description-box, .schedule-page .description-box {
   padding: 27px;
   float: left;
   font-family: "Roboto-r"; }
-  .news-page .description-box .date, .articles-page .description-box .date {
+  .news-page .description-box .date, .articles-page .description-box .date, .trainings-page .description-box .date, .trainers-page .description-box .date, .schedule-page .description-box .date {
     font-family: "Roboto-l";
     font-size: 14px;
     border-bottom: 1px solid #fff;
     padding-bottom: 8px; }
-    .news-page .description-box .date i, .articles-page .description-box .date i {
+    .news-page .description-box .date i, .articles-page .description-box .date i, .trainings-page .description-box .date i, .trainers-page .description-box .date i, .schedule-page .description-box .date i {
       margin-right: 3px; }
-  .news-page .description-box .title-training, .articles-page .description-box .title-training {
+  .news-page .description-box .title-training, .articles-page .description-box .title-training, .trainings-page .description-box .title-training, .trainers-page .description-box .title-training, .schedule-page .description-box .title-training {
     font-size: 16px;
     text-transform: uppercase;
     padding: 8px 0; }
-    .news-page .description-box .title-training h3, .articles-page .description-box .title-training h3 {
+    .news-page .description-box .title-training h3, .articles-page .description-box .title-training h3, .trainings-page .description-box .title-training h3, .trainers-page .description-box .title-training h3, .schedule-page .description-box .title-training h3 {
       font-size: 16px; }
-    .news-page .description-box .title-training a:hover, .articles-page .description-box .title-training a:hover {
+    .news-page .description-box .title-training a:hover, .articles-page .description-box .title-training a:hover, .trainings-page .description-box .title-training a:hover, .trainers-page .description-box .title-training a:hover, .schedule-page .description-box .title-training a:hover {
       text-decoration: none;
       color: #e7845d; }
-  .news-page .description-box .training-section, .articles-page .description-box .training-section {
+  .news-page .description-box .training-section, .articles-page .description-box .training-section, .trainings-page .description-box .training-section, .trainers-page .description-box .training-section, .schedule-page .description-box .training-section {
     color: #999999; }
-  .news-page .description-box .text, .articles-page .description-box .text {
+  .news-page .description-box .text, .articles-page .description-box .text, .trainings-page .description-box .text, .trainers-page .description-box .text, .schedule-page .description-box .text {
     font-size: 13px;
     padding-top: 21px; }
-  .news-page .description-box .more, .articles-page .description-box .more {
+  .news-page .description-box .more, .articles-page .description-box .more, .trainings-page .description-box .more, .trainers-page .description-box .more, .schedule-page .description-box .more {
     display: inline-block;
     padding: 10px 12px;
     background-color: #000;
     color: #fff;
     font-family: "Georgia";
     float: right; }
-    .news-page .description-box .more:hover, .articles-page .description-box .more:hover {
+    .news-page .description-box .more:hover, .articles-page .description-box .more:hover, .trainings-page .description-box .more:hover, .trainers-page .description-box .more:hover, .schedule-page .description-box .more:hover {
       text-decoration: none;
       background-color: #e7845d;
       color: #404040; }
-.news-page .my-pagination, .articles-page .my-pagination {
+.news-page .my-pagination, .articles-page .my-pagination, .trainings-page .my-pagination, .trainers-page .my-pagination, .schedule-page .my-pagination {
   text-align: left;
   padding: 0;
   padding-bottom: 53px; }
-  .news-page .my-pagination .pagination, .articles-page .my-pagination .pagination {
+  .news-page .my-pagination .pagination, .articles-page .my-pagination .pagination, .trainings-page .my-pagination .pagination, .trainers-page .my-pagination .pagination, .schedule-page .my-pagination .pagination {
     margin: 0; }
-  .news-page .my-pagination a, .articles-page .my-pagination a {
+  .news-page .my-pagination a, .articles-page .my-pagination a, .trainings-page .my-pagination a, .trainers-page .my-pagination a, .schedule-page .my-pagination a {
     font-family: "Roboto-r";
     border: 1px solid #000;
     margin: 0px 2px;
     line-height: 1; }
+
+.trainings-page {
+  text-align: center;
+  color: #999999;
+  border-bottom: 2px solid #fff; }
+  .trainings-page .training-articles-name {
+    font-family: "Roboto-b";
+    font-size: 25px;
+    position: relative; }
+    .trainings-page .training-articles-name span {
+      position: relative;
+      z-index: 10;
+      display: inline-block;
+      background-color: #f2f2f2;
+      padding: 0px 7px; }
+    .trainings-page .training-articles-name:after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+      background-color: #8c8c8c; }
+  .trainings-page .training-articles-descr {
+    padding: 23px 0 35px 0;
+    font-family: "Roboto-r"; }
+  .trainings-page .training-boxes {
+    padding: 0px 240px 0 240px; }
+    .trainings-page .training-boxes .training-box {
+      padding-bottom: 25px; }
+    .trainings-page .training-boxes .top-dmt-line {
+      border-bottom: 2px solid #000; }
+      .trainings-page .training-boxes .top-dmt-line .dmt {
+        float: left; }
+        .trainings-page .training-boxes .top-dmt-line .dmt .day {
+          display: inline-block; }
+          .trainings-page .training-boxes .top-dmt-line .dmt .day span {
+            font-family: "Roboto-r";
+            font-size: 21px;
+            color: #404040; }
+            .trainings-page .training-boxes .top-dmt-line .dmt .day span:last-child {
+              font-size: 10px; }
+        .trainings-page .training-boxes .top-dmt-line .dmt .date {
+          margin-left: 8px;
+          font-family: "Roboto-l";
+          color: #404040;
+          font-size: 15px;
+          display: inline-block; }
+      .trainings-page .training-boxes .top-dmt-line .adress {
+        float: right;
+        position: relative;
+        top: 4px;
+        color: #404040; }
+        .trainings-page .training-boxes .top-dmt-line .adress i {
+          margin-right: 5px;
+          color: #111; }
+    .trainings-page .training-boxes .title {
+      position: relative;
+      text-align: left;
+      padding: 8px 0; }
+      .trainings-page .training-boxes .title h3 {
+        font-size: 16px;
+        text-transform: uppercase;
+        display: inline-block;
+        text-decoration: underline; }
+        .trainings-page .training-boxes .title h3 a:hover {
+          color: #e7845d; }
+      .trainings-page .training-boxes .title .more-info {
+        color: #fff;
+        background-color: #000;
+        display: inline-block;
+        top: 0;
+        right: 0;
+        position: absolute;
+        padding: 8px 10px; }
+        .trainings-page .training-boxes .title .more-info:hover {
+          background-color: #e7845d;
+          color: #404040; }
+    .trainings-page .training-boxes .type {
+      padding-bottom: 16px;
+      font-size: 12px;
+      text-align: left; }
+    .trainings-page .training-boxes .consultant-info {
+      background-color: #e8e8e8;
+      padding: 0 !important;
+      margin-bottom: 10px; }
+    .trainings-page .training-boxes .photo {
+      padding: 0; }
+      .trainings-page .training-boxes .photo img {
+        width: 100%; }
+    .trainings-page .training-boxes .text-wrap {
+      padding: 19px 15px 15px 10px;
+      text-align: left; }
+      .trainings-page .training-boxes .text-wrap h3 {
+        font-size: 15px; }
+      .trainings-page .training-boxes .text-wrap .status {
+        color: #999999; }
+      .trainings-page .training-boxes .text-wrap .descr {
+        margin-top: 22px; }
+    .trainings-page .training-boxes .meta-box {
+      text-align: left; }
+      .trainings-page .training-boxes .meta-box .meta-descr p:nth-child(odd) {
+        color: #404040; }
+    .trainings-page .training-boxes .button-group {
+      text-align: right; }
+      .trainings-page .training-boxes .button-group a {
+        display: inline-block;
+        padding: 9px 12px;
+        color: #fff; }
+        .trainings-page .training-boxes .button-group a:first-child {
+          background-color: #404040; }
+          .trainings-page .training-boxes .button-group a:first-child:hover {
+            background-color: #000; }
+        .trainings-page .training-boxes .button-group a:last-child {
+          background-color: #e7845d; }
+          .trainings-page .training-boxes .button-group a:last-child:hover {
+            background-color: #000; }
+
+.trainers-page {
+  padding-top: 68px; }
+  .trainers-page .consultant-info {
+    background-color: #e8e8e8;
+    padding: 0 !important;
+    margin-bottom: 28px; }
+  .trainers-page .photo {
+    padding: 0; }
+    .trainers-page .photo img {
+      width: 100%; }
+  .trainers-page .text-wrap {
+    font-family: "Roboto-l";
+    padding: 19px 15px 15px 10px;
+    text-align: left; }
+    .trainers-page .text-wrap h3 {
+      font-size: 15px; }
+    .trainers-page .text-wrap .status {
+      color: #999999; }
+    .trainers-page .text-wrap .descr {
+      margin-top: 22px; }
+  .trainers-page .carusel-wrapper {
+    position: relative; }
+  .trainers-page .owl-carousel {
+    padding: 0px 15px 15px 0; }
+  .trainers-page .carusel-controls {
+    color: #000;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    font-weight: bold;
+    margin-top: -13px;
+    cursor: pointer; }
+  .trainers-page .right-c {
+    right: -4px; }
+  .trainers-page .left-c {
+    left: -4px; }
+  .trainers-page .item {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative; }
+    .trainers-page .item:before {
+      content: "";
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: #fff; }
+    .trainers-page .item .adress {
+      color: #404040; }
+      .trainers-page .item .adress i {
+        margin-right: 5px;
+        color: #111; }
+    .trainers-page .item .top-dmt-line {
+      border-bottom: 2px solid #000; }
+      .trainers-page .item .top-dmt-line .dmt .day {
+        display: inline-block; }
+        .trainers-page .item .top-dmt-line .dmt .day span {
+          font-family: "Roboto-r";
+          font-size: 21px;
+          color: #404040; }
+          .trainers-page .item .top-dmt-line .dmt .day span:last-child {
+            font-size: 10px; }
+      .trainers-page .item .top-dmt-line .dmt .date {
+        float: right;
+        font-family: "Roboto-l";
+        color: #404040;
+        font-size: 15px;
+        display: inline-block;
+        position: relative;
+        top: 6px; }
+    .trainers-page .item .title {
+      position: relative;
+      text-align: left;
+      padding: 8px 0; }
+      .trainers-page .item .title h3 {
+        font-size: 16px;
+        text-transform: uppercase;
+        display: inline-block; }
+        .trainers-page .item .title h3 a:hover {
+          color: #e7845d; }
+      .trainers-page .item .title .more-info {
+        color: #fff;
+        background-color: #000;
+        display: inline-block;
+        top: 0;
+        right: 0;
+        position: absolute;
+        padding: 8px 10px; }
+        .trainers-page .item .title .more-info:hover {
+          background-color: #e7845d;
+          color: #404040; }
+
+.schedule-page {
+  font-family: "Roboto-l";
+  padding-top: 56px; }
+  .schedule-page .month {
+    text-align: center;
+    position: relative;
+    padding-bottom: 70px; }
+    .schedule-page .month h3 {
+      font-family: "Roboto-bold"; }
+      .schedule-page .month h3 i {
+        color: #404040;
+        margin: 0 13px;
+        font-weight: bold;
+        position: relative;
+        font-size: 25px; }
+    .schedule-page .month .go-traning {
+      display: inline-block;
+      padding: 6px 9px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #e7845d;
+      color: #fff; }
+      .schedule-page .month .go-traning:hover {
+        background-color: #000; }
+    .schedule-page .month h3 {
+      color: #999999;
+      font-size: 21px; }
+  .schedule-page .days .day-z {
+    float: left;
+    text-align: center;
+    width: 14.28571%;
+    font-size: 23px;
+    font-family: "Roboto-l"; }
 
 /*# sourceMappingURL=main.css.map */

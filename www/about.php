@@ -1,10 +1,10 @@
 ﻿<?php include("templates/header.php") ?>
 <body>
 	<header>
+		<?php include("templates/mainmenu.php") ?>
 		<div class="main-bg">
 			<h1>ТРЕНИНГИ №1 В СНГ</h1>
 		</div>
-		<?php include("templates/mainmenu.php") ?>
 	</header>
 	<div class="about-us ">
 		<div class="container">
