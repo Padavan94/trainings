@@ -845,11 +845,92 @@ footer {
     .schedule-page .month h3 {
       color: #999999;
       font-size: 21px; }
-  .schedule-page .days .day-z {
-    float: left;
-    text-align: center;
+  .schedule-page .days {
+    padding-bottom: 40px; }
+    .schedule-page .days .day-z {
+      float: left;
+      width: 14.28571%;
+      font-size: 23px;
+      font-family: "Roboto-l";
+      color: #999999; }
+  .schedule-page .action-container {
     width: 14.28571%;
-    font-size: 23px;
-    font-family: "Roboto-l"; }
+    float: left; }
+  .schedule-page .date span {
+    font-family: "Roboto-reg";
+    font-weight: lighter;
+    font-size: 40px;
+    display: block;
+    margin-bottom: 14px; }
+  .schedule-page .action-box {
+    position: relative;
+    padding: 0px 9px;
+    margin-bottom: 13px; }
+    .schedule-page .action-box:before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: #fff; }
+    .schedule-page .action-box .date-2 {
+      font-size: 13px;
+      color: #999999; }
+    .schedule-page .action-box .type {
+      color: #999999; }
+    .schedule-page .action-box .action-name {
+      border-top: 2px solid #404040;
+      font-size: 13px;
+      text-transform: uppercase;
+      padding: 7px 0 5px 0; }
+      .schedule-page .action-box .action-name a {
+        font-family: "Roboto-b"; }
+        .schedule-page .action-box .action-name a:visited, .schedule-page .action-box .action-name a:focus {
+          color: rgba(64, 64, 64, 0.5);
+          text-decoration: none; }
+        .schedule-page .action-box .action-name a:hover, .schedule-page .action-box .action-name a:active {
+          text-decoration: none;
+          color: #e7845d; }
+    .schedule-page .action-box .address {
+      padding-top: 4px;
+      font-family: "Roboto-m"; }
+      .schedule-page .action-box .address i {
+        color: #000; }
+
+.training-news-page .top-tape {
+  padding-bottom: 6px;
+  border-bottom: 1px solid #404040; }
+.training-news-page .date {
+  float: left;
+  font-family: "Roboto-l";
+  font-size: 14px;
+  padding-bottom: 8px;
+  position: relative;
+  bottom: -9px; }
+  .training-news-page .date i {
+    margin-right: 5px; }
+.training-news-page .socials {
+  float: right;
+  width: 115px;
+  margin-top: 2px; }
+  .training-news-page .socials .soc {
+    display: block;
+    float: left;
+    height: 23px;
+    width: 25%;
+    background-image: url("../../img/socials.png");
+    background-repeat: no-repeat;
+    background-position: center; }
+  .training-news-page .socials a:nth-child(1) .soc {
+    background-position: 0 0;
+    background-position: 0 -23px; }
+  .training-news-page .socials a:nth-child(2) .soc {
+    background-position: 0 0; }
+  .training-news-page .socials a:nth-child(3) .soc {
+    background-position: 0 -46px; }
+  .training-news-page .socials a:nth-child(4) .soc {
+    background-position: 0 -69px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1078,13 +1078,119 @@ footer{
 	}
 
 	.days{
+		padding-bottom: 40px;
 		.day-z{
 			float:left;
-			text-align: center;
 			width: $my100/7;
 			font-size: 23px;
 			font-family: "Roboto-l";
-
+			color: $text_gray_l;
+		}
+	}
+	.action-container{
+		width: $my100/7;
+		float: left;
+	}
+	.date{
+		span{
+			font-family: "Roboto-reg";
+			font-weight: lighter;
+			font-size: 40px;
+			display: block;
+			margin-bottom: 14px;
+		}
+	}
+	.action-box{
+		position: relative;
+		padding: 0px 9px;
+		margin-bottom: 13px;
+		&:before{
+			content: "";
+			display: block;
+			width: 1px;
+			height: 100%;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			background-color: #fff;
+		}
+		
+		.date-2{
+			font-size: 13px;
+			color: $text_gray_l;
+		}
+		.type{
+			color: $text_gray_l;
+		}
+		.action-name{
+			border-top: 2px solid $text_gray;
+			font-size: 13px;
+			text-transform: uppercase;
+			padding: 7px 0 5px 0;
+			a{
+				font-family: "Roboto-b";
+				&:visited, &:focus{
+					color: rgba($text_gray, .5);
+					text-decoration: none;
+				}
+				&:hover, &:active{
+					text-decoration: none;
+					color: $orange;
+				}
+			}
+		}
+		.address{
+			padding-top: 4px;
+			font-family: "Roboto-m";
+			i{
+				color: #000;
+			}
 		}
 	}
 }
+//treaning page of news
+.training-news-page{
+	.top-tape{
+		padding-bottom: 6px;
+		border-bottom: 1px solid $text_gray;
+	}
+	.date{
+		float: left;
+		font-family: "Roboto-l";
+	    font-size: 14px;
+	    padding-bottom: 8px;
+	    position: relative;
+	    bottom: -9px;
+	    i{
+	    	margin-right: 5px;
+	    }
+	}
+	.socials{
+		float: right;
+		width: 115px;
+		margin-top: 2px;
+		.soc{
+			display: block;
+			float: left;
+			height: 23px;
+			width: 25%;
+			background-image: url("../../img/socials.png");
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		a:nth-child(1) .soc{
+			background-position: 0 0;
+			background-position: 0 -23px;
+		}
+		a:nth-child(2) .soc{
+			background-position: 0 0;
+		}
+		a:nth-child(3) .soc{
+			background-position: 0 -46px;
+		}
+		a:nth-child(4) .soc{
+			background-position: 0 -69px;
+		}
+	}
+}
+
