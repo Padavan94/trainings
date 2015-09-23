@@ -12,6 +12,16 @@ $text_gray     :     #404040;
 $text_gray_l   :     #999999;
 $orange        :     #e7845d;
 $my100: 100%;
+@mixin myTrans($who, $time, $prop){    
+	-webkit-transition: $who,$time,$prop;
+    -moz-transition: $who,$time,$prop;
+    -o-transition: $who,$time,$prop;
+    -ms-transition: $who,$time,$prop;
+    transition: $who,$time,$prop;
+}
+
+
+
 
 body{
 	font-size: 14px;
@@ -28,6 +38,7 @@ a{
 		text-decoration: none;
 	}
 }
+
 h1,h2,h3,h4,h5,h6{
 	margin: 0;
 	padding: 0;
@@ -51,6 +62,52 @@ h1,h2,h3,h4,h5,h6{
 }
 
 //independance blocks
+/* Buzz */
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+.hvr-buzz {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
 .owl-controls{
 	display: none !important;
 }
@@ -74,6 +131,34 @@ h1,h2,h3,h4,h5,h6{
 	top:0;left: 0; right: 0; bottom:0;
 	margin: auto;
 	z-index: 10;
+
+}
+.socials{
+	float: right;
+	width: 115px;
+	margin-top: 2px;
+	.soc{
+		display: block;
+		float: left;
+		height: 23px;
+		width: 25%;
+		background-image: url("../../img/socials.png");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	a:nth-child(1) .soc{
+		background-position: 0 0;
+		background-position: 0 -23px;
+	}
+	a:nth-child(2) .soc{
+		background-position: 0 0;
+	}
+	a:nth-child(3) .soc{
+		background-position: 0 -46px;
+	}
+	a:nth-child(4) .soc{
+		background-position: 0 -69px;
+	}
 }
 .image-box:hover{
 	cursor: pointer;
@@ -223,6 +308,7 @@ header{
 			}
 			a{
 				line-height: 91px;
+				@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
 				&:hover{
 					background-color: #fff;
 				}
@@ -348,6 +434,7 @@ header{
 			text-transform: uppercase;
 			padding: 7px 0 18px 0;
 			a{
+				@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
 				font-family: "Roboto-b";
 				&:visited, &:focus{
 					color: rgba($text_gray, .5);
@@ -394,6 +481,7 @@ header{
 			a{
 				font-family: "Roboto-b";
 				font-size: 16px;
+				@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
 				&:visited, &:focus{
 					color: rgba($text_gray, .5);
 					text-decoration: none;
@@ -501,6 +589,7 @@ header{
 		a{
 			display: inline-block;
 			padding: 10px 13px;
+			@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
 			&:hover{
 				background-color: #000;
 				color: #fff;
@@ -544,6 +633,7 @@ footer{
 	}
 	a{
 		text-decoration: underline;
+		@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
 		&:hover{
 			color: $orange;
 			text-decoration: none;
@@ -552,6 +642,7 @@ footer{
 	.mandp{
 		a{
 			color: #b4b4b4;
+			@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
 			&:hover{
 				color: $orange;
 				text-decoration: none;
@@ -577,6 +668,7 @@ footer{
 			border-radius: 50%;
 			margin: 0px 4px;
 			&:hover{
+				@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
 				background-color: #fff;
 				svg path{
 					fill: #308ed0 !important;
@@ -634,6 +726,7 @@ footer{
 	color: $text_gray_l;
 	a{
 		color: $text_gray_l;
+		@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
 		&:hover{
 			color: $orange;
 			text-decoration: none;
@@ -665,6 +758,7 @@ footer{
 			padding: 9px 10px;
 			background-color: #000;
 			color: #fff;
+			@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
 			&:hover{
 				text-decoration: none;
 				background-color: $orange;
@@ -683,6 +777,7 @@ footer{
 			padding: 11px 12px;
 			margin: 0px 5px;
 			color: $text_gray;
+			@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
 			&:hover{
 				background-color: #000;
 				color: #fff;
@@ -721,6 +816,7 @@ footer{
 				font-size: 16px;
 			}
 			a:hover{
+				@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
 				text-decoration: none;
 				color: $orange;
 			}
@@ -740,6 +836,7 @@ footer{
 			font-family: "Georgia";
 			float: right;
 			&:hover{
+				@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
 				text-decoration: none;
 				background-color: $orange;
 				color: $text_gray;
@@ -840,6 +937,9 @@ footer{
 				text-transform: uppercase;
 				display: inline-block;
 				text-decoration: underline;
+				a{
+					@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
+				}
 				a:hover{
 					color: $orange;
 				}
@@ -852,6 +952,7 @@ footer{
 				right: 0;
 				position: absolute;
 				padding: 8px 10px;
+				@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
 				&:hover{
 					background-color: $orange;
 					color: $text_gray;
@@ -899,6 +1000,7 @@ footer{
 		.button-group{
 			text-align: right;
 			a{
+				@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
 				display: inline-block;
 				padding: 9px 12px;
 				color: #fff;
@@ -1022,6 +1124,9 @@ footer{
 				font-size: 16px;
 				text-transform: uppercase;
 				display: inline-block;
+				a{
+					@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
+				}
 				a:hover{
 					color: $orange;
 				}
@@ -1034,6 +1139,7 @@ footer{
 				right: 0;
 				position: absolute;
 				padding: 8px 10px;
+				@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
 				&:hover{
 					background-color: $orange;
 					color: $text_gray;
@@ -1067,6 +1173,7 @@ footer{
 			left: 0;
 			background-color: $orange;
 			color: #fff;
+			@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
 			&:hover{
 				background-color: #000;
 			}
@@ -1129,6 +1236,7 @@ footer{
 			padding: 7px 0 5px 0;
 			a{
 				font-family: "Roboto-b";
+				@include myTrans(all,0.27s,cubic-bezier(0.000, 0.000, 0.580, 1.000));
 				&:visited, &:focus{
 					color: rgba($text_gray, .5);
 					text-decoration: none;
@@ -1150,6 +1258,7 @@ footer{
 }
 //treaning page of news
 .training-news-page{
+	padding-top: 61px;
 	.top-tape{
 		padding-bottom: 6px;
 		border-bottom: 1px solid $text_gray;
@@ -1192,5 +1301,130 @@ footer{
 			background-position: 0 -69px;
 		}
 	}
+	.top-head-box{
+		h3{
+			margin: 12px 0 15px 0;
+			font-size: 16px;
+		}
+		p{
+			font-family: "Roboto-i";
+			font-size: 13px;	
+			color: $text_gray_l;
+		}
+	}
+	.main-text-container{
+		padding-bottom: 30px;
+		font-family: "Roboto-reg";
+		color: #616161;
+		p{
+			margin-bottom: 20px;
+		}
+		.for-img{
+			float: left;
+			margin: 0 30px 20px 0;
+		}
+		.citation{
+			margin-bottom: 30px;
+			font-size: 18px;
+			font-family: "Roboto-i";
+			font-weight: bold;
+		}
+		.image-box{
+			padding: 0;
+			margin: 0 30px 20px 0;
+			img{
+				width: 100%;
+			}
+			svg{
+				width: 75px;
+				height: 60px;
+			}
+
+		}
+	}
+	.photo-section,.video-section{
+		margin-bottom: 43px;
+		.title{
+			font-size: 16px;
+			font-family: "Roboto-b";
+			text-transform: uppercase;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #dedede;
+		}
+		.item-box-container{
+			padding-top: 15px;
+		}
+		.image-box{
+			height: 165px;
+			overflow: hidden;
+			position: relative;
+			z-index: 1;
+			img{
+				width: 100%;
+			}
+			.mask{
+				position: absolute;
+				top:0;
+				left: 0px;
+				width: 100%;
+				height: 100%;
+				padding-right: 15px;
+				padding-left: 15px;
+				div{
+					background-color: rgba(0,0,0,.5);
+					height: 100%;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+.estimate{
+	height: 190px;
+	background-color: #dedede;
+	background-image: url("../../img/stars.png");
+	background-repeat: no-repeat;
+	background-position: 70% bottom;
+	.tape{
+		padding-top: 60px;
+		.title{
+			font-family: "Roboto-b";
+			font-size: 25px;
+			position: relative;
+			&:after{
+				content: "";
+				position: absolute;
+				display: block;
+				top: 50%;
+				left: 108%;
+				width: 823px;
+				height: 1px;
+				background-color: #8c8c8c;
+			}
+		}
+		.socials{
+			margin-top: 5px;
+		}
+	}
+	.stars-container{
+		padding-top: 10px;
+		.star{
+			float: left;
+			margin-right: 16px;
+			cursor: pointer;
+			img, span{
+				display: inline-block;
+				margin: 0 2px;
+				vertical-align: middle;
+			}
+			span{
+				font-family: "Georgia";
+				font-size: 18px;
+				color: $text_gray_l;
+				font-weight: bold;
+			}
+		}
+	}
 }
 
+    
